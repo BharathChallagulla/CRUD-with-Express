@@ -1,5 +1,5 @@
 import express from "express";
-import user from "./Routes/user.js";
+import user from "./routes/user.js";
 import logger from "./middleware/logger.js";
 import serverNotFound from "./middleware/notFoundError.js";
 
