@@ -1,6 +1,7 @@
 import express from "express";
 import user from "./Routes/user.js";
 import logger from "./middleware/logger.js";
+import serverNotFound from "./middleware/notFoundError.js";
 
 const app = express();
 
@@ -10,5 +11,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(logger);
 
 app.use("/users", user);
+
+//server not found
+app.use(serverNotFound);
 
 app.listen(8080, () => console.log("Server has started"));
