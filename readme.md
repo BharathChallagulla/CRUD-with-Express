@@ -1,4 +1,4 @@
-# CRUD with Express and NodeJs
+# CRUD with NodeJs and Express
 
 ### Performed some basic crud operations using NodeJs with Express
 
